@@ -1,0 +1,110 @@
+export default function BladeDashboardLanding() {
+  return (
+    <div className="min-h-screen bg-white text-gray-900">
+      {/* Hero Section */}
+      <section className="bg-[url('/wind-bg.jpg')] bg-cover bg-center py-24 text-center px-4">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          Instant Access to Your Blade Inspection Data
+        </h1>
+        <p className="text-lg md:text-xl mb-6">
+          Your reports, trends, and insights—all in one place. Included free with every inspection.
+        </p>
+        <div className="flex justify-center gap-4">
+          <button className="bg-blue-600 text-white px-6 py-3 rounded-2xl shadow-md hover:bg-blue-700">
+            Access Your Dashboard
+          </button>
+          <a href="#demo" className="text-blue-600 underline mt-3 inline-block">
+            Join the 15-min Live Demo
+          </a>
+        </div>
+      </section>
+
+      {/* Value Prop Section */}
+      <section className="py-16 px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 className="text-3xl font-semibold mb-6">Why It Matters</h2>
+          <ul className="space-y-4 text-lg">
+            <li>✅ Instant access to blade inspection results</li>
+            <li>✅ Visualized condition trends over time</li>
+            <li>✅ Centralized media and documentation</li>
+            <li>✅ Direct contact with your inspection team</li>
+          </ul>
+        </div>
+        <div>
+          <img src="/dashboard-preview.png" alt="Dashboard UI" className="rounded-2xl shadow-lg" />
+        </div>
+      </section>
+
+      {/* Feature Highlights Section */}
+      <section className="bg-gray-50 py-16 px-6">
+        <h2 className="text-3xl font-semibold text-center mb-12">See It in Action</h2>
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="text-center">
+            <img src="/feature1.png" alt="Blade Timeline" className="mx-auto mb-4 rounded-xl shadow" />
+            <p className="font-medium">Track condition over time</p>
+          </div>
+          <div className="text-center">
+            <img src="/feature2.png" alt="Download Reports" className="mx-auto mb-4 rounded-xl shadow" />
+            <p className="font-medium">Export data easily</p>
+          </div>
+          <div className="text-center">
+            <img src="/feature3.png" alt="Alert Panel" className="mx-auto mb-4 rounded-xl shadow" />
+            <p className="font-medium">Get notified of urgent issues</p>
+          </div>
+        </div>
+        <div className="aspect-w-16 aspect-h-9 max-w-4xl mx-auto">
+          <iframe
+            src="https://www.youtube.com/embed/uppS0njAfR8"
+            title="Blade Dashboard Demo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full rounded-xl shadow"
+          ></iframe>
+        </div>
+      </section>
+
+      {/* Easy Onboarding Section */}
+      <section className="py-20 px-6 text-center">
+        <h2 className="text-3xl font-semibold mb-4">Already a Customer? You’re Already In.</h2>
+        <p className="mb-6 max-w-xl mx-auto">
+          We’ve preloaded your most recent inspection data. Logging in takes less than 30 seconds:
+        </p>
+        <ol className="list-decimal list-inside text-lg mb-6 max-w-md mx-auto text-left">
+          <li>Click the button below</li>
+          <li>Use your company email</li>
+          <li>Explore your inspection dashboard</li>
+        </ol>
+        <button className="bg-blue-600 text-white px-6 py-3 rounded-2xl shadow-md hover:bg-blue-700">
+          Log In to Your Dashboard
+        </button>
+        <p className="mt-4">
+          📅 <a href="#demo" className="text-blue-600 underline">Register for a Live Demo</a>
+        </p>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="bg-gray-100 py-16 px-6">
+        <h2 className="text-3xl font-semibold text-center mb-12">What Customers Are Saying</h2>
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <blockquote className="bg-white p-6 rounded-xl shadow">
+            <p className="italic mb-2">“The new dashboard saves us hours every week.”</p>
+            <cite className="block text-right">– Maintenance Manager, WindCo</cite>
+          </blockquote>
+          <blockquote className="bg-white p-6 rounded-xl shadow">
+            <p className="italic mb-2">“Finally, all our inspection data in one place.”</p>
+            <cite className="block text-right">– Site Lead, Northern Turbines</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="bg-blue-50 py-20 px-6 text-center">
+        <h2 className="text-3xl font-bold mb-4">Smarter Blade Monitoring Starts Now</h2>
+        <p className="mb-6">No setup required. Just log in and explore.</p>
+        <button className="bg-blue-600 text-white px-6 py-3 rounded-2xl shadow-md hover:bg-blue-700">
+          Access Your Complimentary Dashboard
+        </button>
+      </section>
+    </div>
+  );
+}
