@@ -607,6 +607,24 @@
   height: 100%;
   border-radius: 8px;
 }
+
+  .hero-video {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  padding-bottom: 31.5%; /* 16:9 ratio of 560px */
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hero-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
 </style>
 </head>
 <body>
@@ -646,6 +664,21 @@
       <a href="#" class="btn-primary">Receive an Offer →</a>
       <a href="#" class="btn-secondary">▶ Watch How It Works</a>
     </div>
+    <div class="hero-actions fade-up delay-3">
+  <a href="#" class="btn-primary">Receive an Offer →</a>
+  <a href="#" class="btn-secondary">▶ Watch How It Works</a>
+</div>
+
+<!-- ADD THIS -->
+<div class="hero-video fade-up delay-3">
+  <iframe
+    src="https://www.youtube.com/embed/kS90bAUKP5g"
+    title="Watch How It Works"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
     <div class="hero-stats fade-up delay-4">
       <div class="stat-item">
         <div class="stat-num">50%+</div>
